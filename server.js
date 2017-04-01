@@ -6,6 +6,8 @@ app.listen(port, function() {
     console.log('Node.js listening on port ' + port);
 });
 
+app.use(express.static('public'));
+
 app.get("/", function(req, res) { //we ask app to get the thing after "/:" accessing to it as an object
     var infoObj = {};
     var h = req.headers;
