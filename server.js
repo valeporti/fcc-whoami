@@ -8,7 +8,7 @@ app.listen(port, function() {
 
 app.use(express.static('public'));
 
-app.get("/", function(req, res) { //we ask app to get the thing after "/:" accessing to it as an object
+app.get("/browsInfo", function(req, res) { //we ask app to get the thing after "/:" accessing to it as an object
     var infoObj = {};
     var h = req.headers;
     var userAgent = h["user-agent"];
